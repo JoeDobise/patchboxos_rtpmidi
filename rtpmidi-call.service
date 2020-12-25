@@ -1,0 +1,15 @@
+#/etc/systemd/system/rtpmidi-call.service
+[Unit]
+Description=RTPMIDI Call {{ bonjour_name }} and forward to MIDI Client 20 Patchbox
+After=network.target
+
+[Service]
+ExecStart=/opt/rtpmidi_0.6.0-buster/bin/rtpmidi call {{ bonjour_name }}:{{ port }} -p 20:0 -- -GSLogSyslog YES
+WorkingDirectory=/home/patch/
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=patch
+
+[Install]
+WantedBy=multi-user.target
