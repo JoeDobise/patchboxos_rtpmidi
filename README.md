@@ -1,4 +1,10 @@
-This is a very slight modifcation to the example systemd service from McLaren Labs
+This started out as an attempt to integrate a better clock source output from any DAW integrating into a hardware setup. 
+What I have found is that by installing the patchboxos from blokas onto a raspberry pi anyone has a perfect starting point to produce better midi data with less jitter.
+This midi data I was initially using the pisound midi outputs to generate however recent experiments have proved extremely promissing even with usb midi devices.
+With some minimal reconfiguration to the generic patchboxos it is possible to install rtpmidi and connect any class compliant usb midi devices with minimal OS introduced jitter latency. 
+Spamming 2-5M midi packets to multiple cc usb midi devices outputted a very consistent latency with extremely low jitter measured with the alsa-midi-latency-test. 
+
+The rtpmidi-call.service file is a very slight modifcation to the example systemd service from McLaren Labs
 
 https://mclarenlabs.com/blog/2020/03/14/run-rtpmidi-as-a-service-on-raspberry-pi/
 
