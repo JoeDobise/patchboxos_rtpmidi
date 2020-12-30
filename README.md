@@ -25,6 +25,7 @@ Steps to install service:
   
       `$ sudo systemctl daemon-reload`    
       `$ sudo systemctl enable rtpmidi-call.service`
+
       `$ sudo systemctl start rtpmidi-call.service`
  
  Following those steps will connect your pisound (or alternate alsa midi device) directly to the desired rtpmidi server. 
