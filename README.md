@@ -23,10 +23,10 @@ Steps to install service:
   2. on the raspberry pi place the modified file in /etc/systemd/system/rtpmidi-call.service
   3. on the raspberry pi run the following commands at the shell:
   
-      `$ sudo systemctl daemon-reload
+      `$ sudo systemctl daemon-reload`
       
-      $ sudo systemctl enable rtpmidi-call.service
+      `$ sudo systemctl enable rtpmidi-call.service`
       
-      $ sudo systemctl start rtpmidi-call.service`
+      `$ sudo systemctl start rtpmidi-call.service`
  
  Following those steps will connect your pisound (or alternate alsa midi device) directly to the desired rtpmidi server. 
