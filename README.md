@@ -10,7 +10,7 @@ https://mclarenlabs.com/
 
 This is configured to connect the pisounds midi port to rtpmidi directly, if you are looking to connect a different alsa midi device, run the following to find the alsa midi device number.
 
-`$ sudo aconnect -l`
+      `$ sudo aconnect -l`
 
 If the device number is 666 you would replace the "-p 20:0" with "-p 666:0" section of the line in the service that starts with ExecStart  
 
