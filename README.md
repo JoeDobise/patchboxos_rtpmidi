@@ -18,6 +18,7 @@ Steps to install service:
   1. replace {{ bonjour_name }} and {{ port }} with the bonjour name and port you are attempting to connect to
   2. on the raspberry pi place the modified file in /etc/systemd/system/rtpmidi-call.service
   3. on the raspberry pi run the following commands at the shell:
+  
       `$ sudo systemctl daemon-reload`
       
       `$ sudo systemctl enable rtpmidi-call.service`
